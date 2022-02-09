@@ -1,28 +1,22 @@
 import React from 'react'
 import Homepage from './components/Homepage'
 import Navbar from './components/Navbar'
-import { Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Signup from './components/Signup'
-
+import Login from './components/login'
+import Contact from './components/contact'
+import About from './components/about'
 const App = () => {
   return (
     <>
       <Navbar />
-      <Route>
-      <Homepage />
-      </Route>
-      <Route>
-      <about />
-      </Route>
-      <Route>
-      <contact />
-      </Route>
-      <Route>
-      <login />
-      </Route>
-      <Route>
-      <Signup />
-      </Route>
+      <Routes>
+        <Route path='/' component={Homepage} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/signup' component={Signup} />
+        <Route path='/login' component={Login} />
+      </Routes>
     </>
   )
 }
