@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* #root {
+  background: url('../public/Website.svg') no-repeat center;
+  background-size: cover;
+} */

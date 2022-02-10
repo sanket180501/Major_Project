@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const signup = () => {
   return <>
@@ -41,22 +42,23 @@ const signup = () => {
                         </label>
                       </div>
 
-                      <div className="form-check d-flex justify-content-center mb-5">
-                        <input
-                          className="form-check-input me-2"
-                          type="checkbox"
-                          value=""
-                          id="form2Example3c"
-                        />
-                        <label className="form-check-label" htmlFor="form2Example3">
+                      <div className="form-check d-flex justify-content-center mb-2">
+                        <label className="form-check-label">
+                          <input
+                            className="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="form2Example3c"
+                          />
                           Remember Me
                         </label>
                       </div>
-
-                      <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <div className="d-flex justify-content-center mx-3 mb-2 mb-lg-3">
                         <button type="button" className="btn btn-primary btn-lg">Register</button>
                       </div>
-
+                      <div>
+                        Already have an account? <Link to='/login'>Login here</Link>
+                      </div>
                     </form>
 
                   </div>
