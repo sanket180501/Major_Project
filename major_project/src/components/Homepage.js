@@ -7,7 +7,7 @@ const Homepage = () => {
         <div className='row g-1 p-2 align-center justify-content-center'>
           <label className="btn btn-secondary" style={{width: 'max-content'}}>
             <input type="file" style={{display: 'none'}} onChange={(e)=>{
-              if (e.target.files.length == 0) return
+              if (e.target.files.length === 0) return
               alert(`${e.target.files[0].name} has been Uploaded successfully`)
             }} />
             <i className="zmdi zmdi-file"></i> Upload file
@@ -15,7 +15,7 @@ const Homepage = () => {
 
           <label className="btn btn-secondary btn-sm" style={{width: 'max-content'}}>
             <input type="file" style={{display: 'none'}} onChange={(e)=>{
-              if (e.target.files.length == 0) return
+              if (e.target.files.length === 0) return
               const folderName = e.target.files[0]?.webkitRelativePath.split('/')[0]
               alert(`${folderName} folder has been Uploaded successfully`)
             }} directory="" webkitdirectory="" mozdirectory="" />
