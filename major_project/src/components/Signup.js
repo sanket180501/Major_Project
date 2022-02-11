@@ -11,7 +11,7 @@ const signup = () => {
               <div className="card-body p-md-5">
                 <div className="row justify-content-center">
                   <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                    <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                    <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</p>
 
                     <form className="mx-1 mx-md-4">
                       <div className="d-flex flex-row align-items-center mb-4">
@@ -42,19 +42,13 @@ const signup = () => {
                         </label>
                       </div>
 
-                      <div className="form-check d-flex justify-content-center mb-2">
-                        <label className="form-check-label">
-                          <input
-                            className="form-check-input me-2"
-                            type="checkbox"
-                            value=""
-                            id="form2Example3c"
-                          />
-                          Remember Me
-                        </label>
-                      </div>
-                      <div className="d-flex justify-content-center mx-3 mb-2 mb-lg-3">
-                        <button type="button" className="btn btn-primary btn-lg">Register</button>
+                      
+                      <div class = "my-3 ms-4 ">
+                        <div class="d-grid gap-2">
+                          <button class="btn btn-primary " type="button">
+                          <large> <i class = "far fa-user pr-2"> </i> Register</large>
+                          </button> 
+                        </div>
                       </div>
                       <div>
                         Already have an account? <Link to='/login'>Login here</Link>
